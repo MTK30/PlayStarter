@@ -1,7 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8125a95-4264-465e-b875-1012691cd8af" name="Default Changelist" comment="" />
+    <list default="true" id="c8125a95-4264-465e-b875-1012691cd8af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_sun_activation_javax_activation_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_sun_xml_bind_jaxb_core_2_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_sun_xml_bind_jaxb_impl_2_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_activation_javax_activation_api_1_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_annotation_javax_annotation_api_1_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_jws_javax_jws_api_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_xml_bind_jaxb_api_2_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_xml_soap_javax_xml_soap_api_1_4_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__javax_xml_ws_jaxws_api_2_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_projectlombok_lombok_1_18_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/MTK-PLAY-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/MTK-PLAY.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/repositories/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/repositories/EbeanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/CarDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/skeletons/SucessResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/db.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_filters_helpers_2_13_2_8_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/play-java-hello-world-tutorial-build.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/play-java-hello-world-tutorial.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$577afc1efef2b7dceb77$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$577afc1efef2b7dceb77.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$577afc1efef2b7dceb77.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$b4b230f404fe54911a22$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$b4b230f404fe54911a22.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$b4b230f404fe54911a22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$004ab23b99ea7cac6789$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$004ab23b99ea7cac6789.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$004ab23b99ea7cac6789.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4005a33833a3a9a2f715$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4005a33833a3a9a2f715.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4005a33833a3a9a2f715.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$58ad26c76eb67f6cbeaa$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$58ad26c76eb67f6cbeaa.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$58ad26c76eb67f6cbeaa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6b39a8e467c3b129b13e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6b39a8e467c3b129b13e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6b39a8e467c3b129b13e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$915e23a9d85f5706cec8$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$915e23a9d85f5706cec8.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$915e23a9d85f5706cec8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a6b1e3584b47ce008433$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a6b1e3584b47ce008433.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a6b1e3584b47ce008433.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a8a936fb6d0e5e8c3eb7$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a8a936fb6d0e5e8c3eb7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a8a936fb6d0e5e8c3eb7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAssets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes$javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes$javascript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/RoutesPrefix$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/RoutesPrefix$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/RoutesPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/RoutesPrefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/commonSidebar$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/commonSidebar$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/commonSidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/commonSidebar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/explore$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/explore$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/explore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/explore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/index$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/index$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/tutorial$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/tutorial$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/tutorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/tutorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/commonSidebar.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/commonSidebar.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/explore.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/explore.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/index.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/index.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/main.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/main.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/tutorial.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/tutorial.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/_global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/_global/streams/sync-exported-assets-web-assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/dumpStructure/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCompileEverything/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/ssExtractDependencies/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/_global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/_global/streams/op-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/run/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/unmanagedJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/compilation-error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/favicon0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/header-pattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/hello-custom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/hello-one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play-components.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play-request-response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play-stack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play_icon_reverse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/request-response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/javascripts/prism.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/stylesheets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/stylesheets/prism.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,10 +188,21 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1Vctt4ZfOTchmbNUebCtluLr9Gj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,6 +210,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="localhost" type="Remote">
+      <module name="MTK-PLAY" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="9999" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9999" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="availableProjects">
@@ -45,7 +235,7 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="play-java-hello-world-tutorial" />
+              <option name="name" value="MTK-PLAY" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
@@ -56,7 +246,7 @@
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value="play-java-hello-world-tutorial-build" />
+                <option name="name" value="MTK-PLAY-build" />
                 <option name="path" value="$PROJECT_DIR$/project" />
               </ExternalProjectPojo>
             </list>
@@ -66,7 +256,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="2359103195" />
+        <entry key="$PROJECT_DIR$" value="4734180748524" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3137819371" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1134086237" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2816308467" />
       </map>
@@ -98,13 +289,61 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1578802816552">
+    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578865432165">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1578802816552" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578810489787">
+    <state x="141" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1578865432165" />
+    <state x="366" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578862186792">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1578810489787" />
+    <state x="366" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1366.741@0.27.1366.741" timestamp="1578862186792" />
+    <state width="1320" height="219" key="GridCell.Tab.0.bottom" timestamp="1578865435340">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1578865435340" />
+    <state width="1320" height="219" key="GridCell.Tab.0.center" timestamp="1578865435339">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1578865435339" />
+    <state width="1320" height="219" key="GridCell.Tab.0.left" timestamp="1578865435338">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1578865435338" />
+    <state width="1320" height="219" key="GridCell.Tab.0.right" timestamp="1578865435340">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1578865435340" />
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom" timestamp="1578865435344">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1578865435344" />
+    <state width="1320" height="219" key="GridCell.Tab.1.center" timestamp="1578865435342">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1578865435342" />
+    <state width="1320" height="219" key="GridCell.Tab.1.left" timestamp="1578865435341">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1578865435341" />
+    <state width="1320" height="219" key="GridCell.Tab.1.right" timestamp="1578865435343">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1578865435343" />
+    <state x="172" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1578865793423">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="172" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1578865793423" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1578864510783">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1578864510783" />
+    <state x="462" y="69" width="432" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578862744012">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="462" y="69" width="432" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1578862744012" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578866866908">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1578866866908" />
   </component>
 </project>

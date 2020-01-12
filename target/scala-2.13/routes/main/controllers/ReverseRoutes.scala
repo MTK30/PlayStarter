@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/mtk/WorkSpace/PlayProject/conf/routes
-// @DATE:Sat Dec 28 04:30:30 IST 2019
+// @DATE:Mon Jan 13 03:36:00 IST 2020
 
 import play.api.mvc.Call
 

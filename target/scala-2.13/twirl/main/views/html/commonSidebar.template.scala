@@ -60,7 +60,7 @@ Seq[Any](_display_(/*2.2*/defining(play.core.PlayVersion.current)/*2.41*/ { vers
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-28T04:30:30.524
+                  DATE: 2020-01-13T03:36:00.875912
                   SOURCE: /home/mtk/WorkSpace/PlayProject/app/views/commonSidebar.scala.html
                   HASH: 3cd7c6882b267d4230c0aefd4917fdaebefa0223
                   MATRIX: 909->1|1005->5|1052->44|1102->57|1129->58|1203->106|1217->112|1258->133|1327->176|1341->182|1384->205|1458->253|1472->259|1516->283|1668->408|1696->415

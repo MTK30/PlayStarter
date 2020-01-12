@@ -1,28 +1,35 @@
 package controllers;
 
+import models.Car;
 import play.libs.Json;
 import play.mvc.*;
+import services.CarDetailsService;
+import skeletons.SucessResponse;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
  */
+@Singleton
 public class HomeController extends Controller {
 
-    /**
-     * An action that renders an HTML page with a welcome message.
-     * The configuration in the <code>routes</code> file means that
-     * this method will be called when the application receives a
-     * <code>GET</code> request with a path of <code>/</code>.
-     */
+    private final CarDetailsService carDetailsService;
+
+    @Inject
+    public HomeController(CarDetailsService carDetailsService) {
+        this.carDetailsService = carDetailsService;
+    }
+
     public Result index() {
-        ArrayList<String> myArrayList = new ArrayList<>();
-        myArrayList.add("MTK");
-        myArrayList.add("OM");
-        myArrayList.add("Seal");
-        return ok(Json.toJson(myArrayList));
+        List<Car> cars = carDetailsService.getAllCarDetails();
+        //:TODO
+        Car car = cars.get(0);
+        return ok(Json.toJson(new SucessResponse(car)));
     }
     
     public Result explore() {
