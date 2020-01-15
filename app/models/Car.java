@@ -1,6 +1,7 @@
 package models;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.ebean.Model;
 import lombok.Getter;
@@ -10,13 +11,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "Car")
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class Car extends Model {
+public class Car extends Model implements Serializable {
 
     @Id
     @Column(name="id")

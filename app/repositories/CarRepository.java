@@ -13,7 +13,6 @@ public class CarRepository extends EbeanRepository<Car,Integer> {
 
     public List<Car> fetchAllTheCarDetails() {
         return getCabSharingReadctx().find(Car.class)
-                .setMaxRows(1)
                 .findList();
     }
 

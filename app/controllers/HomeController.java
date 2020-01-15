@@ -1,14 +1,14 @@
 package controllers;
 
-import models.Car;
 import play.libs.Json;
 import play.mvc.*;
 import services.CarDetailsService;
-import skeletons.SucessResponse;
+import skeletons.exception.TrainCustomException;
+import skeletons.response.CarResponse;
+import skeletons.response.SuccessResponse;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,11 +25,15 @@ public class HomeController extends Controller {
         this.carDetailsService = carDetailsService;
     }
 
-    public Result index() {
-        List<Car> cars = carDetailsService.getAllCarDetails();
-        //:TODO
-        Car car = cars.get(0);
-        return ok(Json.toJson(new SucessResponse(car)));
+    public Result getCarDemo() {
+        List<CarResponse> carsResponse;
+        try {
+            throw new TrainCustomException(500,"Exception in service","Exception in Sevice of CarDetailService");
+//            carsResponse = carDetailsService.getAllCarDetails();
+        } catch(Exception ex) {
+            throw new TrainCustomException(500,"Exception in service","Exception in Sevice of CarDetailService");
+        }
+//        return ok(Json.toJson(new SuccessResponse(carsResponse)));
     }
     
     public Result explore() {

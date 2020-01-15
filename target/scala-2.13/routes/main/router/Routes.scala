@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/mtk/WorkSpace/PlayProject/conf/routes
-// @DATE:Mon Jan 13 03:36:00 IST 2020
+// @DATE:Thu Jan 16 01:26:46 IST 2020
 
 package router
 
@@ -40,7 +40,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.HomeController.index"""),
+    ("""GET""", this.prefix, """controllers.HomeController.getCarDemo"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """explore""", """controllers.HomeController.explore"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tutorial""", """controllers.HomeController.tutorial"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
@@ -52,15 +52,15 @@ class Routes(
 
 
   // @LINE:6
-  private[this] lazy val controllers_HomeController_index0_route = Route("GET",
+  private[this] lazy val controllers_HomeController_getCarDemo0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_1.index,
+  private[this] lazy val controllers_HomeController_getCarDemo0_invoker = createInvoker(
+    HomeController_1.getCarDemo,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "index",
+      "getCarDemo",
       Nil,
       "GET",
       this.prefix + """""",
@@ -127,9 +127,9 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:6
-    case controllers_HomeController_index0_route(params@_) =>
+    case controllers_HomeController_getCarDemo0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_1.index)
+        controllers_HomeController_getCarDemo0_invoker.call(HomeController_1.getCarDemo)
       }
   
     // @LINE:7
