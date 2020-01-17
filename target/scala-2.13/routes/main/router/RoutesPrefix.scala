@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/mtk/WorkSpace/PlayProject/conf/routes
-// @DATE:Thu Jan 16 01:26:46 IST 2020
+// @DATE:Fri Jan 17 11:37:23 IST 2020
 
 
 package router {

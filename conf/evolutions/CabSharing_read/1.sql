@@ -60,8 +60,18 @@ create table car (
   constraint pk_car primary key (id)
 );
 
+create table login_credentials (
+  id                            integer auto_increment not null,
+  user_name                     varchar(255),
+  pwd                           varchar(255),
+  mobile_no                     integer,
+  constraint pk_login_credentials primary key (id)
+);
+
 
 # --- !Downs
 
 drop table if exists car;
+
+drop table if exists login_credentials;
 

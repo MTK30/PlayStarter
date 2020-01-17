@@ -11,31 +11,31 @@ import java.util.Collection;
  * @data 13/01/2020
  */
 public class EbeanRepository<T ,ID extends Serializable> {
-    private final EbeanServer cabSharingReadctx;
-    private final EbeanServer cabSharingWritectx;
+    private final EbeanServer careerCarrierReadctx;
+    private final EbeanServer careerCarrierWritectx;
     private final Class<T> persistenClass;
 
     @Inject
     public EbeanRepository(Class<T> persistenClass) {
-        this.cabSharingReadctx = io.ebean.Ebean.getServer("CabSharing_read");
-        this.cabSharingWritectx = io.ebean.Ebean.getServer("CabSharing_write");
+        this.careerCarrierReadctx = io.ebean.Ebean.getServer("career_carrier_read");
+        this.careerCarrierWritectx = io.ebean.Ebean.getServer("career_carrier_write");
         this.persistenClass = persistenClass;
     }
 
-    public EbeanServer getCabSharingReadctx() {
-        return cabSharingReadctx;
+    public EbeanServer getCareerCarrierReadctx() {
+        return careerCarrierReadctx;
     }
 
-    public EbeanServer getCabSharingWritectx() {
-        return cabSharingWritectx;
+    public EbeanServer getCareerCarrierWritectx() {
+        return careerCarrierWritectx;
     }
 
     public <S extends T> void save(S entity) {
-        cabSharingWritectx.save(entity);
+        careerCarrierWritectx.save(entity);
     }
 
     public <S extends T> void saveAll(Collection<S> entities) {
-        cabSharingWritectx.saveAll(entities);
+        careerCarrierWritectx.saveAll(entities);
     }
 
 }
