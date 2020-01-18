@@ -32,6 +32,9 @@ public class AdminController extends Controller {
     public Result loginRegister(Http.Request request) {
         JsonNode response;
         LoginRegisterDetailsRequest loginDetailsRequest = LoginRegisterDetailsRequest.build(request.body().asJson());
+        if(!LoginRegisterDetailsRequest.validate(loginDetailsRequest)) {
+            return ok(Json.toJson(new ExceptionResponse(500,"Invalid Input",LoginRegisterDetailsRequest.validationError)));
+        }
         Boolean isSaved = Boolean.FALSE;
         try {
              isSaved = adminService.setLoginCredentials(loginDetailsRequest);
@@ -45,6 +48,9 @@ public class AdminController extends Controller {
     public Result login(Http.Request request) {
         JsonNode response;
         LoginRequest loginRequest = LoginRequest.build(request.body().asJson());
+        if(!LoginRequest.validate(loginRequest)) {
+            return ok(Json.toJson(new ExceptionResponse(500,"Invalid Input",LoginRequest.validationError)));
+        }
         Boolean isLoggedInUser = Boolean.FALSE;
         try {
             isLoggedInUser = adminService.isUser(loginRequest);
@@ -55,8 +61,6 @@ public class AdminController extends Controller {
         return ok(response);
     }
     //:TODO
-    // request validation
-    //TrainCustomException -> CustomException
     //why Eolutions module is there in play directory
     //
 }
