@@ -7,9 +7,10 @@ import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
 import services.AdminService;
-import skeletons.exception.TrainCustomException;
+import skeletons.exception.CareerCarrierException;
 import skeletons.request.LoginRegisterDetailsRequest;
 import skeletons.request.LoginRequest;
+import skeletons.response.ExceptionResponse;
 import skeletons.response.SuccessResponse;
 
 import javax.inject.Inject;
@@ -35,7 +36,7 @@ public class AdminController extends Controller {
         try {
              isSaved = adminService.setLoginCredentials(loginDetailsRequest);
         }catch (Exception ex) {
-             response = Json.toJson(new TrainCustomException(500,"Process error",ex.getMessage()));
+             response = Json.toJson(new ExceptionResponse(500,"Process error",ex.getMessage()));
         }
         response = Json.toJson(new SuccessResponse(isSaved));
         return ok(response);
@@ -48,10 +49,14 @@ public class AdminController extends Controller {
         try {
             isLoggedInUser = adminService.isUser(loginRequest);
         }catch(Exception ex) {
-            response = Json.toJson(new TrainCustomException(500,"Processing Error","error while matching the user credentials"));
+            response = Json.toJson(new ExceptionResponse(500,"Processing Error",ex.getMessage()));
         }
         response =Json.toJson(new SuccessResponse(isLoggedInUser));
         return ok(response);
     }
-
+    //:TODO
+    // request validation
+    //TrainCustomException -> CustomException
+    //why Eolutions module is there in play directory
+    //
 }

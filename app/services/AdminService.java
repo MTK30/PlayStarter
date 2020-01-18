@@ -2,7 +2,7 @@ package services;
 
 import models.LoginDetails;
 import repositories.LoginDetailsRepository;
-import skeletons.exception.TrainCustomException;
+import skeletons.exception.CareerCarrierException;
 import skeletons.request.LoginRegisterDetailsRequest;
 import skeletons.request.LoginRequest;
 
@@ -24,7 +24,7 @@ public class AdminService {
     public Boolean setLoginCredentials(LoginRegisterDetailsRequest loginDetailsRequest) {
         Boolean isSaved = Boolean.FALSE;
         if(loginDetailsRequest == null) {
-            throw new TrainCustomException(500,"Invalid Request","Request is null");
+            throw new CareerCarrierException(500,"Invalid Request","Request is null");
         }
         LoginDetails loginDetails = new LoginDetails();
         loginDetails.setUserName(loginDetailsRequest.getUserName());
@@ -35,14 +35,14 @@ public class AdminService {
             loginDetails.setMd5Pwd(md5Pwd);
         }
         catch (Exception ex) {
-            throw new TrainCustomException(500,"Md5 Algo","Error in Genrating the md5 algorithm");
+            throw new CareerCarrierException(500,"Md5 Algo","Error in Genrating the md5 algorithm");
         }
         if(loginDetails.getMd5Pwd()!= null) {
             try {
                 loginDetailsRepository.save(loginDetails);
                 isSaved = Boolean.TRUE;
             } catch (Exception ex) {
-                throw new TrainCustomException(410,"Persistance Call",ex.getMessage());
+                throw new CareerCarrierException(410,"Persistance Call",ex.getMessage());
             }
         }
         return isSaved;
@@ -53,12 +53,12 @@ public class AdminService {
         try {
             String pwd = getMd5Representation(loginRequest.getPwd());
             LoginDetails loginDetails = loginDetailsRepository.getLoggedInUser(loginRequest.getUserName(),pwd);
-            if(loginRequest != null) {
+            if(loginDetails != null) {
                 isLoggedInUser = Boolean.TRUE;
             }
         }
         catch(Exception ex) {
-            throw new TrainCustomException(500,"Presistance Exception",ex.getMessage());
+            throw new CareerCarrierException(500,"Presistance Exception",ex.getMessage());
         }
         return isLoggedInUser;
     }
@@ -75,7 +75,7 @@ public class AdminService {
             }
         }
         catch (Exception ex) {
-            throw new TrainCustomException(500,"Invalid algo","ALgorithm MD5 in MessageDigest");
+            throw new CareerCarrierException(500,"Invalid algo","ALgorithm MD5 in MessageDigest");
         }
         return md5Pwd;
     }
