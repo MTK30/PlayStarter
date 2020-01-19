@@ -14,6 +14,10 @@ public class CareerCarrierException extends RuntimeException {
     public CareerCarrierException(Integer code, String type, String description) {
         this(new ResponseCodeTrain(code,type,description));
     }
+
+    public CareerCarrierException(String Description) {
+
+    }
     public static String getResponseCode(ResponseCode responseCode) {
         return Json.toJson(responseCode).toString();
     }

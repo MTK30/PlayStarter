@@ -7,8 +7,7 @@ import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
 import services.AdminService;
-import skeletons.exception.CareerCarrierException;
-import skeletons.request.LoginRegisterDetailsRequest;
+import skeletons.request.RegisterUserDetailsRequest;
 import skeletons.request.LoginRequest;
 import skeletons.response.ExceptionResponse;
 import skeletons.response.SuccessResponse;
@@ -31,17 +30,17 @@ public class AdminController extends Controller {
 
     public Result loginRegister(Http.Request request) {
         JsonNode response;
-        LoginRegisterDetailsRequest loginDetailsRequest = LoginRegisterDetailsRequest.build(request.body().asJson());
-        if(!LoginRegisterDetailsRequest.validate(loginDetailsRequest)) {
-            return ok(Json.toJson(new ExceptionResponse(500,"Invalid Input",LoginRegisterDetailsRequest.validationError)));
+        RegisterUserDetailsRequest loginDetailsRequest = RegisterUserDetailsRequest.build(request.body().asJson());
+        if(!RegisterUserDetailsRequest.validate(loginDetailsRequest)) {
+            return ok(Json.toJson(new ExceptionResponse(500,"Invalid Input", RegisterUserDetailsRequest.validationError)));
         }
         Boolean isSaved = Boolean.FALSE;
         try {
-             isSaved = adminService.setLoginCredentials(loginDetailsRequest);
+             isSaved = adminService.createUser(loginDetailsRequest);
+             response = Json.toJson(new SuccessResponse(isSaved));
         }catch (Exception ex) {
-             response = Json.toJson(new ExceptionResponse(500,"Process error",ex.getMessage()));
+             response = Json.toJson(new ExceptionResponse(500,"Process error",ex.toString()));
         }
-        response = Json.toJson(new SuccessResponse(isSaved));
         return ok(response);
     }
 

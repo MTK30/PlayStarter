@@ -4,3 +4,6 @@ clean
 compile
 run 
 run
+clean
+compile
+run

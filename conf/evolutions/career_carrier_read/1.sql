@@ -62,10 +62,23 @@ create table car (
 
 create table login_credentials (
   id                            bigint auto_increment not null,
+  user_id                       bigint,
   user_name                     varchar(255),
   pwd                           varchar(255),
-  mobile                        bigint,
   constraint pk_login_credentials primary key (id)
+);
+
+create table user (
+  id                            bigint auto_increment not null,
+  name                          varchar(255),
+  mobile                        bigint,
+  dob                           datetime(6),
+  education_qualification       varchar(255),
+  professional_position         varchar(255),
+  field_of_expertise            varchar(255),
+  about                         varchar(255),
+  can_answer                    varchar(255),
+  constraint pk_user primary key (id)
 );
 
 
@@ -74,4 +87,6 @@ create table login_credentials (
 drop table if exists car;
 
 drop table if exists login_credentials;
+
+drop table if exists user;
 
