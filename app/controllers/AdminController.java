@@ -59,6 +59,8 @@ public class AdminController extends Controller {
         response =Json.toJson(new SuccessResponse(isLoggedInUser));
         return ok(response);
     }
+
+
     //:TODO
     //why Eolutions module is there in play directory
     //

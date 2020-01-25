@@ -12,6 +12,12 @@ import javax.inject.Singleton;
  */
 public class Utils {
 
+    /**
+     * converts incomming http Requestion in the underlinde "to" class
+     * @param from
+     * @param to
+     * @return
+     */
     public static Object converObjectTORequest(Object from, Class to) {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

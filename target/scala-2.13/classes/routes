@@ -9,5 +9,16 @@ POST     /loginRegister                           controllers.AdminController.lo
 #loginUser
 POST     /login                                   controllers.AdminController.login(request : Request)
 
+
+#Ask Question
+POST    /askQuestion                              controllers.QandAController.insertQuestion(request : Request)
+
+#Answer Question
+POST     /answerQuestion                          controllers.QandAController.answerQuestion(request: Request)
+GET      /recentQuestion                          controllers.QandAController.getRecentlyAddedQuestions()
+GET      /reecentQandA                            controllers.QandAController.getRecentQandA()
+
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
