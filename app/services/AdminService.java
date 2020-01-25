@@ -26,6 +26,11 @@ public class AdminService {
         this.userRepository = userRepository;
     }
 
+    /**
+     * Creating the new User
+     * @param registerUserDetailsRequest
+     * @return
+     */
     public Boolean createUser(RegisterUserDetailsRequest registerUserDetailsRequest) {
         Boolean newUserCreated;
         LoginRequest loginRequest = new LoginRequest();
@@ -58,6 +63,12 @@ public class AdminService {
         return newUserCreated;
     }
 
+    /**
+     * Setting the Login Credentials for the new User
+     * @param loginDetailsRequest
+     * @param userId
+     * @return
+     */
     public Boolean setLoginCredentials(RegisterUserDetailsRequest loginDetailsRequest, Long userId) {
         Boolean isSaved = Boolean.FALSE;
         if(loginDetailsRequest == null) {
@@ -85,6 +96,11 @@ public class AdminService {
         return isSaved;
     }
 
+    /**
+     * Logging in User
+     * @param loginRequest
+     * @return
+     */
     public Boolean isUser(LoginRequest loginRequest) {
         Boolean isLoggedInUser = Boolean.FALSE;
         try {
@@ -100,6 +116,11 @@ public class AdminService {
         return isLoggedInUser;
     }
 
+    /**
+     * MD5 hash Genrator
+     * @param input
+     * @return
+     */
     public String getMd5Representation(String input) {
         String md5Pwd;
         try {

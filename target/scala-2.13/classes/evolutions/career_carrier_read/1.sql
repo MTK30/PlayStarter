@@ -52,12 +52,14 @@ BEGIN
   EXECUTE stmt;
 END
 $$
-create table car (
-  id                            integer auto_increment not null,
-  name                          varchar(255),
-  cab_type                      varchar(255),
-  cab_accomodate                integer,
-  constraint pk_car primary key (id)
+create table answer (
+  id                            bigint auto_increment not null,
+  user_id                       bigint,
+  question_id                   bigint,
+  answer                        varchar(255),
+  date_of_answer                datetime(6),
+  date_of_update                datetime(6),
+  constraint pk_answer primary key (id)
 );
 
 create table login_credentials (
@@ -66,6 +68,15 @@ create table login_credentials (
   user_name                     varchar(255),
   pwd                           varchar(255),
   constraint pk_login_credentials primary key (id)
+);
+
+create table question (
+  id                            bigint auto_increment not null,
+  user_id                       bigint,
+  question                      varchar(255),
+  tagging                       varchar(255),
+  date_of_question              datetime(6),
+  constraint pk_question primary key (id)
 );
 
 create table user (
@@ -84,9 +95,11 @@ create table user (
 
 # --- !Downs
 
-drop table if exists car;
+drop table if exists answer;
 
 drop table if exists login_credentials;
+
+drop table if exists question;
 
 drop table if exists user;
 

@@ -12,4 +12,10 @@ public class UserRepository extends EbeanRepository<User,Long> {
             super(User.class);
     }
 
+    public User getUserById(Long id) {
+        return getCareerCarrierReadctx().find(User.class)
+                .where()
+                .eq("id",id)
+                .findOne();
+    }
 }
