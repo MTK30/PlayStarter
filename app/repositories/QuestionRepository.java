@@ -27,4 +27,12 @@ public class QuestionRepository extends EbeanRepository<Question, Long> {
                 .setMaxRows(Constants.maxQuestionInRecent)
                 .findList();
     }
+
+    public List<Question> getQuestionCanAnswer(String canAnswer) {
+        return getCareerCarrierReadctx().find(Question.class)
+                .where()
+                .like("tagging",'%'+canAnswer+'%')
+                .findList();
+    }
+
 }

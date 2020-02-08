@@ -4,6 +4,7 @@ import models.Answer;
 import utils.Constants;
 
 import javax.inject.Singleton;
+import javax.security.auth.login.AccountNotFoundException;
 import java.util.Date;
 import java.util.List;
 
@@ -22,4 +23,17 @@ public class AnswerRepository extends EbeanRepository<Answer,Long> {
                 .findList();
     }
 
+    public Answer getAnswerById(Long id) {
+        return getCareerCarrierReadctx().find(Answer.class)
+                .where()
+                .eq("id",id)
+                .findOne();
+    }
+
+    public List<Answer> getAnswerByUserId(Long userId) {
+        return getCareerCarrierReadctx().find(Answer.class)
+                .where()
+                .eq("user_id",userId)
+                .findList();
+    }
 }

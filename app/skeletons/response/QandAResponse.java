@@ -10,4 +10,8 @@ public class QandAResponse {
     private String question;
 
     private String answer;
+
+    private Integer questionLikeCount;
+
+    private Integer answerLikeCount;
 }

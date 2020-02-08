@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.inject.Singleton;
+import java.util.List;
 
 /**
  * Class where commonly used functionality is kept
@@ -26,5 +27,12 @@ public class Utils {
         return object;
     }
 
+    public static<T> Boolean isEmpty(List<T> list) {
+        Boolean isEmpty = Boolean.TRUE;
+        if(list != null && list.size() != 0 ) {
+            isEmpty = Boolean.FALSE;
+        }
+        return isEmpty;
+    }
 
 }

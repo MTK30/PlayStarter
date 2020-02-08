@@ -1,5 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/mtk/WorkSpace/PlayProject/conf/routes:19:1: type QandAController is not a member of package contollers[0m
-[0m[[0m[31merror[0m] [0m[0mGET      /reecentQandA                             contollers.QandAController.getRecentQandA()[0m
-[0m[[0m[31merror[0m] [0m[0m/home/mtk/WorkSpace/PlayProject/conf/routes:19:1: type QandAController is not a member of package contollers[0m
-[0m[[0m[31merror[0m] [0m[0mGET      /reecentQandA                             contollers.QandAController.getRecentQandA()[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/mtk/WorkSpace/PlayProject/app/utils/Utils.java: /home/mtk/WorkSpace/PlayProject/app/utils/Utils.java uses unchecked or unsafe operations.[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/mtk/WorkSpace/PlayProject/app/utils/Utils.java: Recompile with -Xlint:unchecked for details.[0m

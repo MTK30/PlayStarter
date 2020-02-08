@@ -18,6 +18,14 @@ POST     /answerQuestion                          controllers.QandAController.an
 GET      /recentQuestion                          controllers.QandAController.getRecentlyAddedQuestions()
 GET      /reecentQandA                            controllers.QandAController.getRecentQandA()
 
+#FeedBack Response
+POST     /updateFeedBack                          controllers.FeedbackController.updateFeedback(request : Request)
+
+
+#User Routes
+GET       /canAnswer                             controllers.UserController.userCanAnswer(userId :java.lang.Long ?= null)
+GET       /alreadyAnswered                       controllers.UserController.getAlreadyAnswered(userId:java.lang.Long ?= null)
+
 
 
 # Map static resources from the /public folder to the /assets URL path

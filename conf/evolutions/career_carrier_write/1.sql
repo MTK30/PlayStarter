@@ -59,7 +59,18 @@ create table answer (
   answer                        varchar(255),
   date_of_answer                datetime(6),
   date_of_update                datetime(6),
+  like_count                    integer,
+  dislike_count                 integer,
   constraint pk_answer primary key (id)
+);
+
+create table feedback (
+  id                            bigint auto_increment not null,
+  user_id                       bigint,
+  entity_id                     bigint,
+  entity_type                   varchar(255),
+  like_dislike                  integer,
+  constraint pk_feedback primary key (id)
 );
 
 create table login_credentials (
@@ -76,6 +87,8 @@ create table question (
   question                      varchar(255),
   tagging                       varchar(255),
   date_of_question              datetime(6),
+  like_count                    integer,
+  dislike_count                 integer,
   constraint pk_question primary key (id)
 );
 
@@ -85,6 +98,7 @@ create table user (
   mobile                        bigint,
   dob                           datetime(6),
   education_qualification       varchar(255),
+  specialization                varchar(255),
   professional_position         varchar(255),
   field_of_expertise            varchar(255),
   about                         varchar(255),
@@ -96,6 +110,8 @@ create table user (
 # --- !Downs
 
 drop table if exists answer;
+
+drop table if exists feedback;
 
 drop table if exists login_credentials;
 

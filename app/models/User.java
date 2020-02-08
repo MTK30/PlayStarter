@@ -37,6 +37,10 @@ public class User extends Model implements Serializable {
     private String educationQualification;
 
     @Setter
+    @Column(name="specialization")
+    private String specialization;
+
+    @Setter
     @Column(name = "professional_position")
     private String professionalPosition;
 
