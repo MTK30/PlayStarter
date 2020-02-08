@@ -1,5 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/mtk/WorkSpace/PlayProject/conf/application.conf,/home/mtk/WorkSpace/PlayProject/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/mtk/WorkSpace/PlayProject/conf/akka.conf,/home/mtk/WorkSpace/PlayProject/target/scala-2.13/classes/akka.conf)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/mtk/WorkSpace/PlayProject/conf/routes,/home/mtk/WorkSpace/PlayProject/target/scala-2.13/classes/routes)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/mtk/WorkSpace/PlayProject/conf/db.conf,/home/mtk/WorkSpace/PlayProject/target/scala-2.13/classes/db.conf)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	(/home/mtk/WorkSpace/PlayProject/conf/logback.xml,/home/mtk/WorkSpace/PlayProject/target/scala-2.13/classes/logback.xml)[0m

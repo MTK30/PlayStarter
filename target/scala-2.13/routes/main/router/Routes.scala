@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/mtk/WorkSpace/PlayProject/conf/routes
-// @DATE:Sat Jan 25 19:12:58 IST 2020
+// @DATE:Sun Feb 09 02:50:38 IST 2020
 
 package router
 
@@ -17,9 +17,13 @@ class Routes(
   // @LINE:7
   AdminController_2: controllers.AdminController,
   // @LINE:14
-  QandAController_0: controllers.QandAController,
-  // @LINE:24
-  Assets_1: controllers.Assets,
+  QandAController_1: controllers.QandAController,
+  // @LINE:22
+  FeedbackController_0: controllers.FeedbackController,
+  // @LINE:26
+  UserController_3: controllers.UserController,
+  // @LINE:32
+  Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -28,15 +32,19 @@ class Routes(
     // @LINE:7
     AdminController_2: controllers.AdminController,
     // @LINE:14
-    QandAController_0: controllers.QandAController,
-    // @LINE:24
-    Assets_1: controllers.Assets
-  ) = this(errorHandler, AdminController_2, QandAController_0, Assets_1, "/")
+    QandAController_1: controllers.QandAController,
+    // @LINE:22
+    FeedbackController_0: controllers.FeedbackController,
+    // @LINE:26
+    UserController_3: controllers.UserController,
+    // @LINE:32
+    Assets_4: controllers.Assets
+  ) = this(errorHandler, AdminController_2, QandAController_1, FeedbackController_0, UserController_3, Assets_4, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, AdminController_2, QandAController_0, Assets_1, prefix)
+    new Routes(errorHandler, AdminController_2, QandAController_1, FeedbackController_0, UserController_3, Assets_4, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -50,6 +58,9 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """answerQuestion""", """controllers.QandAController.answerQuestion(request:Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """recentQuestion""", """controllers.QandAController.getRecentlyAddedQuestions()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reecentQandA""", """controllers.QandAController.getRecentQandA()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateFeedBack""", """controllers.FeedbackController.updateFeedback(request:Request)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """canAnswer""", """controllers.UserController.userCanAnswer(userId:java.lang.Long ?= null)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """alreadyAnswered""", """controllers.UserController.getAlreadyAnswered(userId:java.lang.Long ?= null)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -105,7 +116,7 @@ class Routes(
   private[this] lazy val controllers_QandAController_insertQuestion2_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
-      QandAController_0.insertQuestion(fakeValue[play.mvc.Http.Request]),
+      QandAController_1.insertQuestion(fakeValue[play.mvc.Http.Request]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.QandAController",
@@ -125,7 +136,7 @@ class Routes(
   private[this] lazy val controllers_QandAController_answerQuestion3_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
-      QandAController_0.answerQuestion(fakeValue[play.mvc.Http.Request]),
+      QandAController_1.answerQuestion(fakeValue[play.mvc.Http.Request]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.QandAController",
@@ -143,7 +154,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("recentQuestion")))
   )
   private[this] lazy val controllers_QandAController_getRecentlyAddedQuestions4_invoker = createInvoker(
-    QandAController_0.getRecentlyAddedQuestions(),
+    QandAController_1.getRecentlyAddedQuestions(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.QandAController",
@@ -161,7 +172,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reecentQandA")))
   )
   private[this] lazy val controllers_QandAController_getRecentQandA5_invoker = createInvoker(
-    QandAController_0.getRecentQandA(),
+    QandAController_1.getRecentQandA(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.QandAController",
@@ -174,12 +185,68 @@ class Routes(
     )
   )
 
-  // @LINE:24
-  private[this] lazy val controllers_Assets_versioned6_route = Route("GET",
+  // @LINE:22
+  private[this] lazy val controllers_FeedbackController_updateFeedback6_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateFeedBack")))
+  )
+  private[this] lazy val controllers_FeedbackController_updateFeedback6_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      FeedbackController_0.updateFeedback(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.FeedbackController",
+      "updateFeedback",
+      Seq(classOf[play.mvc.Http.Request]),
+      "POST",
+      this.prefix + """updateFeedBack""",
+      """FeedBack Response""",
+      Seq()
+    )
+  )
+
+  // @LINE:26
+  private[this] lazy val controllers_UserController_userCanAnswer7_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("canAnswer")))
+  )
+  private[this] lazy val controllers_UserController_userCanAnswer7_invoker = createInvoker(
+    UserController_3.userCanAnswer(fakeValue[java.lang.Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "userCanAnswer",
+      Seq(classOf[java.lang.Long]),
+      "GET",
+      this.prefix + """canAnswer""",
+      """User Routes""",
+      Seq()
+    )
+  )
+
+  // @LINE:27
+  private[this] lazy val controllers_UserController_getAlreadyAnswered8_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("alreadyAnswered")))
+  )
+  private[this] lazy val controllers_UserController_getAlreadyAnswered8_invoker = createInvoker(
+    UserController_3.getAlreadyAnswered(fakeValue[java.lang.Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "getAlreadyAnswered",
+      Seq(classOf[java.lang.Long]),
+      "GET",
+      this.prefix + """alreadyAnswered""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:32
+  private[this] lazy val controllers_Assets_versioned9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
-    Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned9_invoker = createInvoker(
+    Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -213,32 +280,51 @@ class Routes(
     case controllers_QandAController_insertQuestion2_route(params@_) =>
       call { 
         controllers_QandAController_insertQuestion2_invoker.call(
-          req => QandAController_0.insertQuestion(req))
+          req => QandAController_1.insertQuestion(req))
       }
   
     // @LINE:17
     case controllers_QandAController_answerQuestion3_route(params@_) =>
       call { 
         controllers_QandAController_answerQuestion3_invoker.call(
-          req => QandAController_0.answerQuestion(req))
+          req => QandAController_1.answerQuestion(req))
       }
   
     // @LINE:18
     case controllers_QandAController_getRecentlyAddedQuestions4_route(params@_) =>
       call { 
-        controllers_QandAController_getRecentlyAddedQuestions4_invoker.call(QandAController_0.getRecentlyAddedQuestions())
+        controllers_QandAController_getRecentlyAddedQuestions4_invoker.call(QandAController_1.getRecentlyAddedQuestions())
       }
   
     // @LINE:19
     case controllers_QandAController_getRecentQandA5_route(params@_) =>
       call { 
-        controllers_QandAController_getRecentQandA5_invoker.call(QandAController_0.getRecentQandA())
+        controllers_QandAController_getRecentQandA5_invoker.call(QandAController_1.getRecentQandA())
       }
   
-    // @LINE:24
-    case controllers_Assets_versioned6_route(params@_) =>
+    // @LINE:22
+    case controllers_FeedbackController_updateFeedback6_route(params@_) =>
+      call { 
+        controllers_FeedbackController_updateFeedback6_invoker.call(
+          req => FeedbackController_0.updateFeedback(req))
+      }
+  
+    // @LINE:26
+    case controllers_UserController_userCanAnswer7_route(params@_) =>
+      call(params.fromQuery[java.lang.Long]("userId", Some(null))) { (userId) =>
+        controllers_UserController_userCanAnswer7_invoker.call(UserController_3.userCanAnswer(userId))
+      }
+  
+    // @LINE:27
+    case controllers_UserController_getAlreadyAnswered8_route(params@_) =>
+      call(params.fromQuery[java.lang.Long]("userId", Some(null))) { (userId) =>
+        controllers_UserController_getAlreadyAnswered8_invoker.call(UserController_3.getAlreadyAnswered(userId))
+      }
+  
+    // @LINE:32
+    case controllers_Assets_versioned9_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned6_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned9_invoker.call(Assets_4.versioned(path, file))
       }
   }
 }

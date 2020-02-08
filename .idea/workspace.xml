@@ -2,44 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8125a95-4264-465e-b875-1012691cd8af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/QandAController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositories/AnswerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositories/QuestionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/QandAService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/skeletons/request/AnswerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/skeletons/request/QuestionRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/skeletons/response/QandAResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/skeletons/response/RecentQuestionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/context/NormalExecutionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/FeedbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/enums/EntityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Feedback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/repositories/FeedBackRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/FeedBackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/skeletons/request/FeedbackRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/skeletons/response/FeedBackResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/skeletons/response/UserCanAnswerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/akka.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/QandAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/QandAController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/AnswerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/AnswerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/skeletons/request/RegisterUserDetailsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/skeletons/request/RegisterUserDetailsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/skeletons/response/QandAResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/skeletons/response/QandAResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/evolutions/career_carrier_read/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/conf/evolutions/career_carrier_read/1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/evolutions/career_carrier_write/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/conf/evolutions/career_carrier_write/1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/QandAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/QandAController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAssets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseQandAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseQandAController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseQandAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseQandAController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes$javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes$javascript.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/evolutions/career_carrier_read/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/evolutions/career_carrier_read/1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/evolutions/career_carrier_write/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/evolutions/career_carrier_write/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/models/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/models/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/models/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/models/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/models/Question.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/repositories/AnswerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/repositories/AnswerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/repositories/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/repositories/QuestionRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/repositories/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/services/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/services/QandAService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/services/QandAService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/skeletons/request/RegisterUserDetailsRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/skeletons/request/RegisterUserDetailsRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/utils/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" afterDir="false" />
@@ -48,15 +65,14 @@
       <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/_global/streams/play_instrumentation_2.13" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/_global/streams/play_instrumentation_2.13" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/_global/streams/play_instrumentation_2.13" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/_global/streams/play_instrumentation_2.13" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/_global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/_global/streams/op-cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/run/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/run/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/twirlCompileTemplates/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/twirlCompileTemplates/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +123,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practise/ProducerConsumer.java" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Remote.localHost">
@@ -223,46 +240,58 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1579234564778" />
-    <state width="1320" height="219" key="GridCell.Tab.0.bottom" timestamp="1579960359206">
+    <state x="441" y="100" key="#xdebugger.evaluate" timestamp="1581170636227">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579960359206" />
-    <state width="1320" height="219" key="GridCell.Tab.0.center" timestamp="1579960359205">
+    <state x="441" y="100" key="#xdebugger.evaluate/0.27.1366.741@0.27.1366.741" timestamp="1581170636227" />
+    <state width="548" height="466" key="DebuggerActiveHint" timestamp="1581198351605">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579960359205" />
-    <state width="1320" height="219" key="GridCell.Tab.0.left" timestamp="1579960359205">
+    <state width="548" height="466" key="DebuggerActiveHint/0.27.1366.741@0.27.1366.741" timestamp="1581198351605" />
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580018233857">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579960359205" />
-    <state width="1320" height="219" key="GridCell.Tab.0.right" timestamp="1579960359206">
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1580018233857" />
+    <state width="1320" height="219" key="GridCell.Tab.0.bottom" timestamp="1581197429485">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579960359206" />
-    <state width="1320" height="219" key="GridCell.Tab.1.bottom" timestamp="1579960378197">
+    <state width="1320" height="219" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1581197429485" />
+    <state width="1320" height="219" key="GridCell.Tab.0.center" timestamp="1581197429484">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579960378197" />
-    <state width="1320" height="219" key="GridCell.Tab.1.center" timestamp="1579960378197">
+    <state width="1320" height="219" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1581197429484" />
+    <state width="1320" height="219" key="GridCell.Tab.0.left" timestamp="1581197429482">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1579960378197" />
-    <state width="1320" height="219" key="GridCell.Tab.1.left" timestamp="1579960378196">
+    <state width="1320" height="219" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1581197429482" />
+    <state width="1320" height="219" key="GridCell.Tab.0.right" timestamp="1581197429484">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1579960378196" />
-    <state width="1320" height="219" key="GridCell.Tab.1.right" timestamp="1579960378197">
+    <state width="1320" height="219" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1581197429484" />
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom" timestamp="1581197431394">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="219" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1579960378197" />
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1581197431394" />
+    <state width="1320" height="219" key="GridCell.Tab.1.center" timestamp="1581197431394">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1581197431394" />
+    <state width="1320" height="219" key="GridCell.Tab.1.left" timestamp="1581197431393">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1581197431393" />
+    <state width="1320" height="219" key="GridCell.Tab.1.right" timestamp="1581197431394">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1581197431394" />
     <state x="172" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1578865793423">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="172" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1578865793423" />
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1579960231409">
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581161980212">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1579960231409" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1581161980212" />
     <state x="462" y="69" width="432" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579116301442">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -271,10 +300,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="0" y="27" width="710" height="741" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1579234863969" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1579970511357">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581199076724">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1579970511357" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1581199076724" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -286,12 +315,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/AdminController.java</url>
-          <line>54</line>
+          <line>68</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/AdminController.java</url>
-          <line>48</line>
+          <line>62</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -306,22 +335,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/AdminController.java</url>
-          <line>38</line>
+          <line>47</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/QandAController.java</url>
-          <line>55</line>
+          <line>74</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/QandAController.java</url>
-          <line>56</line>
+          <line>75</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/QandAController.java</url>
-          <line>60</line>
+          <line>79</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -333,6 +362,36 @@
           <url>file://$PROJECT_DIR$/app/services/QandAService.java</url>
           <line>101</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/services/FeedBackService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/services/FeedBackService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/services/UserService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/services/UserService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/repositories/QuestionRepository.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

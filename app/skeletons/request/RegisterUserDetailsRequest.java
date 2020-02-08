@@ -21,6 +21,8 @@ public class RegisterUserDetailsRequest {
 
     private String educationQualification;
 
+    private String specialization;
+
     private String professionalPosition;
 
     private String fieldOfExpertise;

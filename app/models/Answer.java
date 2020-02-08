@@ -40,4 +40,12 @@ public class Answer extends Model implements Serializable {
     @Column(name = "date_of_update")
     private Date dateOfUpdate;
 
+    @Setter
+    @Column(name="like_count")
+    private Integer likeCount;
+
+    @Setter
+    @Column(name="dislike_count")
+    private Integer disLikeCount;
+
 }
